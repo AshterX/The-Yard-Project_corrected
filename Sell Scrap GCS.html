@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Scrap</title>
+    <link rel="stylesheet" href="StyleSellScrapGCS.css">
+</head>
+
+<body>
+    <header>
+        <h4>Select Area for Scrap Pickup</h4>
+    </header>
+
+    <main>
+        <form action=" " method=" ">
+            <fieldset>
+                <legend><small><sup>*</sup>Required</small></legend>
+                <section>
+                    <label for="address">Enter Address<sup>*</sup>:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+                    <br>
+
+                    <label for="locality">Select Locality<sup>*</sup>:</label>
+                    <input type="search" id="localityInput" name="locality" list="localities" placeholder="Start typing locality" required>
+                    <datalist id="localities">
+                        <option value="Locality 1, Jaipur">
+                        <option value="Locality 2, Jaipur">
+                        <option value="Locality 3, Jaipur">
+                    </datalist>
+
+                    <br>
+
+                    <label for="time">Select Time<sup>*</sup>:</label>
+                    <input type="time" id="time" name="pickup_time" required>
+
+                    <br>
+
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Leave any special instructions here"></textarea>
+
+                    <br>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </section>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <small><p>Copyright @<a href="index.html">Yard</a> Technologies</p></small>
+    </footer>
+</body>
+</html>

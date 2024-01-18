@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+    font-family: 'Arial, sans-serif';
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #00a3cc, #007f9a); /* Gradient background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+    animation: headerFadeIn 1s ease-in-out forwards; /* Header fade-in animation */
+}
+
+@keyframes headerFadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Increased letter spacing */
+}
+
+header h5 {
+    font-size: 1.4em;
+    margin: 0;
+    font-style: bold;
+    opacity: 0.8;
+}
+
+/* Navigation Styles */
+nav {
+    background: #fff; /* White navigation background */
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
+}
+
+nav a {
+    color: #333; /* Dark text color for navigation links */
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /* Blue on hover */
+    transition: color 0.3s ease;
+}
+
+/* Sell Junk Button */
+nav a.button-sell-junk {
+    background: #007bff; /* Blue button background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded button corners */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav a.button-sell-junk:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    background: #fff; /* White section background */
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px; /* Rounded section corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #007bff; /* Blue section header color */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #00a3cc, #007f9a); /* Gradient footer background */
+    color: #fff; /* White text color in the footer */
+    text-align: center;
+    padding: 10px 0;
+    animation: footerFadeIn 1s ease-in-out forwards; /* Footer fade-in animation */
+}
+
+@keyframes footerFadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Copyright Link in Footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Header Image Styles */
+header img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200PX;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* Circular image */
+}
+
+
+footer a:hover {
+    color: #007bff; /* Blue on hover */
+}
